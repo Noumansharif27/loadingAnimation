@@ -4,6 +4,7 @@ let navBtn = document.querySelector("#nav-btn");
 let menu = document.querySelector("#menu");
 let line1 = document.querySelector("#line-1");
 let line2 = document.querySelector("#line-2");
+let nav = document.querySelector("#nav");
 let isMenuOn = 0;
 
 navBtn.addEventListener("click", () => {
@@ -17,6 +18,10 @@ navBtn.addEventListener("click", () => {
     line2.style.rotate = "60deg";
     line1.style.transition = "all 0.5s ease-in 0.5s";
     line2.style.transition = "all 0.5s ease-in 0.5s";
+
+    line1.style.clor = "#232323";
+    line2.style.color = "#232323";
+    nav.style.color = "#232323";
   } else {
     menu.style.top = "-150%";
     line1.style.width = "2.2rem";
@@ -25,6 +30,11 @@ navBtn.addEventListener("click", () => {
     line2.style.rotate = "0deg";
     line1.style.transition = "all 0.5s ease-in 0.5s";
     line2.style.transition = "all 0.5s ease-in 0.5s";
+
+    line1.style.clor = "#cacaca";
+    line2.style.color = "#cacaca";
+    nav.style.color = "#cacaca";
+
     isMenuOn = 0;
   }
 });
