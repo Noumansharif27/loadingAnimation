@@ -200,6 +200,15 @@ function loadingPage() {
         ease: "Expo.easeInOut",
       },
       "8"
+    )
+    .to(
+      nav,
+      {
+        opacity: 1,
+        duration: "-2",
+        ease: "Power1.easeInOut",
+      },
+      "7"
     );
 }
 
@@ -216,33 +225,33 @@ function page2() {
     },
   });
 
-  tl.to(
-    "#img-1",
-    {
-      top: 0,
-      duration: 1,
-      ease: "Power1.easeIn",
-    },
-    "1"
-  )
-    .to(
-      "#img-2",
-      {
-        top: 0,
-        duration: 1,
-        ease: "Power1.easeIn",
-      },
-      "1"
-    )
-    .to(
-      "#img-3",
-      {
-        top: 0,
-        duration: 1,
-        ease: "Power1.easeIn",
-      },
-      "1"
-    );
+  // tl.to(
+  //   "#img-1",
+  //   {
+  //     top: 0,
+  //     duration: 1,
+  //     ease: "Power1.easeIn",
+  //   },
+  //   "1"
+  // )
+  //   .to(
+  //     "#img-2",
+  //     {
+  //       top: 0,
+  //       duration: 1,
+  //       ease: "Power1.easeIn",
+  //     },
+  //     "1"
+  //   )
+  //   .to(
+  //     "#img-3",
+  //     {
+  //       top: 0,
+  //       duration: 1,
+  //       ease: "Power1.easeIn",
+  //     },
+  //     "1"
+  //   );
 }
 
 page2();
